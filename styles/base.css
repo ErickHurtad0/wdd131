@@ -1,0 +1,135 @@
+:root {
+  --primary: #6a0dad;       
+  --primary-dark: #4b0082;  
+  --accent: #ffb347;       
+  --light: #f8f6fc;       
+  --text: #2c2c2c;         
+  --text-light: #ffffff;   
+  --shadow: rgba(0, 0, 0, 0.15);
+  --body_font: "Roboto Slab", serif;
+  --header_font: "Merriweather", serif; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body_font);
+  background: var(--light);
+  color: var(--text);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: var(--primary);
+  color: var(--text-light);
+  font-family: var(--header_font);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 10px var(--shadow);
+}
+
+header span {
+    display: block;
+}
+
+#course-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: var(--accent);
+}
+
+main {
+  flex: 1;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+main h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary-dark);
+  font-family: var(--header_font);
+  margin-bottom: 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px var(--shadow);
+}
+
+.card h2 {
+  color: var(--primary-dark);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.card img {
+  max-width: 120px;
+  border-radius: 50%;
+  float: right;
+  margin: 0 0 1rem 1rem;
+  box-shadow: 0 3px 6px var(--shadow);
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+footer {
+  background: var(--primary-dark);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+#lastModified {
+  font-size: 0.85rem;
+  color: var(--accent);
+  margin-top: 0.5rem;
+}
