@@ -89,16 +89,23 @@ main h1 {
   margin-bottom: 2rem;
 }
 
-h2 {
+main h2 {
   text-align: center;
   font-size: 2rem;
   font-family: var(--header_font);
   margin-bottom: 1.5rem;
 }
 
+main .temples-grid {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 2rem;                  
+  padding: 2rem 0;
+}
+
 main figure {
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 0;
 }
 
 main figure img {
@@ -106,6 +113,7 @@ main figure img {
   border-radius: var(--radius);
   box-shadow: 0 6px 12px var(--shadow);
 }
+
 
 
 
