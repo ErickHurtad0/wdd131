@@ -89,6 +89,13 @@ main h1 {
   margin-bottom: 2rem;
 }
 
+main h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--header_font);
+  margin-bottom: 1.5rem;
+}
+
 main figure {
   text-align: center;
   margin-bottom: 2rem;
@@ -99,4 +106,5 @@ main figure img {
   border-radius: var(--radius);
   box-shadow: 0 6px 12px var(--shadow);
 }
+
 
