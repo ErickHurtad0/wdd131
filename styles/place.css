@@ -128,17 +128,6 @@ li {
     text-shadow: 0 4px 12px var(--word-shadow);
 }
 
-.weather-title::after {
-    content: "";
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    padding-left: 5px;
-    margin-right: -2rem;
-    content: url("/images/cloud-icon.svg");
-    vertical-align: middle;
-}
-
 .weather ul {
     padding-top: 4rem;
 }
@@ -155,4 +144,5 @@ footer {
     text-align: center;
     padding-top: 0.6rem;
 }
+
 
