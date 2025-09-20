@@ -135,7 +135,7 @@ li {
     height: 32px;
     padding-left: 5px;
     margin-right: -2rem;
-    content: url("/images/cloud-icon.svg");
+    content: url("images/cloud-icon.svg");
     vertical-align: middle;
 }
 
@@ -154,4 +154,5 @@ footer {
     color: black;
     text-align: center;
     padding-top: 0.6rem;
+
 }
