@@ -1,0 +1,52 @@
+body {
+  padding: 1rem;
+}
+
+header nav {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+main h1 {
+  font-size: 1.5rem;
+}
+
+#main-menu {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  background: var(--primary);
+  padding: 1rem;
+  border-radius: var(--radius);
+}
+
+#burguer-menu {
+  position: absolute;   
+  top: 2rem;            
+  left: 2rem;          
+  background: none;
+  border: none;
+  font-size: 2rem;      
+  color: var(--text-light);
+  cursor: pointer;    
+}
+
+
+#main-menu.active {
+  display: flex;
+}
+
+@media (min-width: 769px) {
+  #burguer-menu {
+    display: none;
+  }
+
+  #main-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    background: none;
+    padding: 0;
+  }
+}
