@@ -1,0 +1,239 @@
+:root {
+    --primary-color: #0D1B2A;
+    --secondary-color: #1E6091;
+    --accent1: #F8F4E3;
+    --accent2: #D99152;
+    --body-font: "Roboto Slab", serif;
+    --header-font: "Merriweather", serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    background-color: var(--accent1);
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.logo-link {
+    text-decoration: none;      
+    display: inline-block;       
+}
+
+.logo-link h1 {
+    background-color: var(--primary-color);
+    color: var(--accent1);
+    font-family: var(--header-font);
+    display: inline-block;
+    padding: 0.3rem 1.2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    font-size: 2rem;
+    margin: 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.logo-link:hover h1 {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: var(--secondary-color);
+}
+
+
+#burguer-menu {
+    display: none;
+}
+
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--accent2);
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.hero {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--accent1);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.hero h2 {
+    margin: 0 0 1rem 0;
+    font-family: var(--header-font);
+    font-size: 2rem;
+}
+
+h4 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 2rem; 
+}
+
+.artists-classic {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+}
+
+.artist-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.artist-card:hover {
+    transform: scale(1.02);
+}
+
+.artist-card img {
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.artist-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.artist-card p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.artist-card ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+.artist-card ul li {
+    margin: 0.4rem 0;
+}
+
+.artist-card a {
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--accent2);
+    transition: color 0.3s;
+}
+
+.artist-card a:hover {
+    color: var(--accent2);
+}
+
+.signup {
+    max-width: 450px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--accent1);
+    border: 2px solid var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: var(--body-font);
+}
+
+.signup h2 {
+    text-align: center;
+    font-family: var(--header-font);
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.signup label {
+    display: block;
+    margin: 0.8rem 0 0.3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.signup input[type="text"],
+.signup input[type="email"],
+.signup select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.signup input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.signup button {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: var(--secondary-color);
+    color: var(--accent1);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.signup button:hover {
+    background-color: var(--accent2);
+    transform: scale(1.03);
+}
+
+#message p {
+    margin-top: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#message p.success {
+    background-color: #1E6091;
+    color: #F8F4E3;
+}
+
+#message p.error {
+    background-color: #D99152;
+    color: #F8F4E3;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent1);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
